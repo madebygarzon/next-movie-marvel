@@ -19,10 +19,10 @@ Este proyecto utiliza PHP para interactuar con la API de "When is the Next MCU F
 ## Ejecución del Proyecto
 
 Para ejecutar este proyecto, simplemente coloca los archivos en un servidor web compatible con PHP y accede a la página web correspondiente en tu navegador preferido.
-## byGarzon
+
 
 ---
-*Nota: Este proyecto es solo con fines educativos y de demostración.*
+*Nota: Este proyecto es solo con fines educativos y de demostración. byGarzon*
 
 
 
