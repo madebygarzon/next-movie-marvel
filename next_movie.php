@@ -19,10 +19,9 @@ curl_close($ch);
 </head>
 
 <main>
-    
-        <section>
-            <img src="<?= $data["poster_url"]; ?>" width="200" alt="poster <?= $data["title"];  ?>" style="border-radius: 16px" />
-        </section>
+    <section>
+        <img src="<?= $data["poster_url"]; ?>" width="200" alt="poster <?= $data["title"];  ?>" style="border-radius: 16px" />
+    </section>
     <hgroup>
         <h2><?= $data["title"]; ?> se estrena en <?= $data["days_until"];  ?> días. </h2>
         <p>Fecha de estreno: <?= $data["release_date"]; ?> </p>
@@ -30,20 +29,16 @@ curl_close($ch);
     </hgroup>
     
 </main>
-
 <style>
     :root {
         color-scheme: light dark;
         font-size: 15px;
         /*font-family: 'Poppins'; */
-
     }
-
     body {
         display: grid;
         place-content: center;
     }
-
     section {
         display: flex; 
         justify-content: center;
@@ -57,7 +52,5 @@ curl_close($ch);
         flex-direction: column;
         justify-content: center;
         text-align: center;
-
     }
-
 </style>
