@@ -1,19 +1,13 @@
 <?php
 const API_URL = "https://whenisthenextmcufilm.com/api";
-#Inicializar una nueva sesión de cURL; ch = cURL handle
 $ch = curl_init(API_URL); 
-// Inidicar que queremos recibir el resultado de la peticion y no mostrarla en pantalla
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true); 
-/* Ejecutar la petición
-y guardamos el resultado
-*/
+
 $response = curl_exec($ch);
 
-// Una alternativa seria utilizar file_get_contents
-// $response = file_get_contents("http://www.google.es"); si solo quiero hacer un GET a una API
 $data = json_decode($response, true);
 curl_close($ch);
-// var_dump($data);
+
 ?>
 <head>
     <meta  charset="UTF-8" />
